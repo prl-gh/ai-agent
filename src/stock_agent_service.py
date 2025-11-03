@@ -10,7 +10,8 @@ from threading import Event
 # Load environment variables
 load_dotenv()
 
-LLM_MODEL = "moonshotai/Kimi-K2-Instruct-0905"  # Updated model name
+# LLM_MODEL = "moonshotai/Kimi-K2-Instruct-0905"  # Updated model name
+LLM_MODEL = "gpt-4.1-nano"
 
 class WebConsole:
     def __init__(self):
@@ -49,7 +50,7 @@ class WebConsole:
 class StockInfoAgent:
     def __init__(self):
         self.client = OpenAI(
-            base_url="https://router.huggingface.co/v1",
+            # base_url="https://router.huggingface.co/v1",
             api_key=os.getenv('OPENAI_API_KEY'))
         self.conversation_history = []
         self.console = WebConsole()
