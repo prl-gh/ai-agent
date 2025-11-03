@@ -20,7 +20,7 @@ ENV PYTHONUNBUFFERED=1
 ENV OPENAI_API_KEY=""
 
 # Expose port
-EXPOSE 5555
+EXPOSE 5000
 
 # Command to run the application
 CMD ["python", "-m", "flask", "run", "--host=0.0.0.0"]
