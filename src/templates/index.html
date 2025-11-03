@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Information Agent</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Stock Information Agent</h1>
+        <p>Ask me about stock prices, company CEOs, or any stock-related questions!</p>
+        <div class="input-area">
+            <input type="text" id="user-input" placeholder="Type your question here...">
+            <button id="submit-button">Send</button>
+        </div>
+        <div id="response-area"></div>
+    </div>
+    <script src="{{ url_for('static', filename='js/console.js') }}"></script>
+</body>
+</html>
